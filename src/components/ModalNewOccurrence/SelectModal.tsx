@@ -17,7 +17,7 @@ export const SelectModal = (props: SelectMenuProps) => {
         <div>
             <label className="block mb-1">
                 <div className="mb-1">
-                    <span className={`${props.disabled && 'opacity-50 cursor-not-allowed'} text-black font-bold text-sm xl:text-xs`}>
+                    <span className={`${props.disabled && 'opacity-50 cursor-not-allowed'} text-black text-sm`}>
                         {props.label}
                     </span>
                 </div>
@@ -25,7 +25,7 @@ export const SelectModal = (props: SelectMenuProps) => {
                     {...props}
                     name={props.name}
                     as="select"
-                    className={`${props.disabled && 'opacity-50 cursor-not-allowed'} w-full text-sm px-4 h-16 xl:h-10 rounded-[10px] bg-[#eceef1] border-none focus:outline-none focus:border-purple `}
+                    className={`${props.disabled && 'opacity-50 cursor-not-allowed'} placeholder:text-[#A0A0A0] placeholder:font-medium w-full text-sm px-3 h-[50px] rounded-[10px] bg-white border  border-gray-100 outline-none`}
                 >
                     <option>{props.option}</option>
                     {props.children && props.children}
@@ -35,3 +35,4 @@ export const SelectModal = (props: SelectMenuProps) => {
         </div>
     );
 }
+

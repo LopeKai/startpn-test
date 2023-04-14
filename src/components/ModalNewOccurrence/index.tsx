@@ -130,8 +130,8 @@ export const ModalNewOccurrence = ({ isOpen, onRequestClose }: ModalNewOccurrenc
                     <Form>
                         <fieldset>
                             <InputModal
-                                label='Nome'
                                 name='name'
+                                label='Nome da ocorrência'
                                 placeholder='Digite nome da ocorrência'
                                 error={errors.name}
                             />
@@ -140,7 +140,7 @@ export const ModalNewOccurrence = ({ isOpen, onRequestClose }: ModalNewOccurrenc
                         <fieldset>
                             <SelectModal
                                 name="origin"
-                                label="Origem:"
+                                label="Origem da não conformidade"
                                 error={errors.origin}
                             >
                                 {

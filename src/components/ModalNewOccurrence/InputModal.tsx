@@ -19,7 +19,7 @@ export const InputModal = (props: InputModalProps) => {
                 <div>
                     <Field
                         {...props}
-                        className="bg-[#eceef1] placeholder:text-[#cacaca] placeholder:font-normal w-full text-sm px-3 h-10 rounded-[10px]  outline-none "
+                        className="placeholder:text-[#A0A0A0] placeholder:font-medium w-full text-sm px-3 h-[50px] rounded-[10px] bg-white border  border-gray-100 outline-none "
                     />
                 </div>
                 <span className="relative mt-1 text-xs text-red-500">{props.error}</span>
